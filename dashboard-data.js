@@ -1,3 +1,73 @@
+const charterSnapshotMetricSeed = [
+  {
+    name: "Количество продуктовых направлений, упакованных на согласованном уровне, шт",
+    comment: "База 0 означает количество направлений, формально принятых по новой модели упаковки проекта на уровне не ниже L3/L4 по состоянию на дату старта.",
+    rows: [
+      { month: "04", plan: "0", fact: "0", deviation: "0" },
+      { month: "05", plan: "0", fact: null, deviation: null },
+      { month: "06", plan: "3", fact: null, deviation: null },
+      { month: "07", plan: "3", fact: null, deviation: null },
+      { month: "08", plan: "6", fact: null, deviation: null },
+      { month: "09", plan: "9", fact: null, deviation: null },
+      { month: "10", plan: "9", fact: null, deviation: null },
+      { month: "11", plan: "13", fact: null, deviation: null },
+      { month: "12", plan: "13", fact: null, deviation: null }
+    ]
+  },
+  {
+    name: "Количество MVP-карточек, подготовленных и переданных в контур обучения, шт",
+    comment: "KPI считается выполненным только после передачи карточек в контур обучения, а не только после подготовки черновиков.",
+    rows: [
+      { month: "04", plan: "10", fact: "10", deviation: "0" }
+    ]
+  },
+  {
+    name: "Количество новых продуктовых направлений, выведенных в продажу, шт",
+    comment: "Новым направлением считается продукт, по которому утверждены оффер и коммерческие условия, определены контуры внедрения и сопровождения, подготовлены материалы и возможна первая продажа.",
+    rows: [
+      { month: "04", plan: "0", fact: "0", deviation: "0" },
+      { month: "05", plan: "1", fact: null, deviation: null },
+      { month: "06", plan: "1", fact: null, deviation: null },
+      { month: "07", plan: "1", fact: null, deviation: null },
+      { month: "08", plan: "1", fact: null, deviation: null },
+      { month: "09", plan: "1", fact: null, deviation: null },
+      { month: "10", plan: "1", fact: null, deviation: null },
+      { month: "11", plan: "2", fact: null, deviation: null },
+      { month: "12", plan: "2", fact: null, deviation: null }
+    ]
+  },
+  {
+    name: "RGU в MASS_B2B, услуг на клиента, ед.",
+    comment: "В контрольной точке 08 сохраняется последняя утвержденная квартальная цель до следующей вехи 09.",
+    rows: [
+      { month: "04", plan: "1.1", fact: "1.09", deviation: "0.01" },
+      { month: "05", plan: "1.1", fact: null, deviation: null },
+      { month: "06", plan: "1.2", fact: null, deviation: null },
+      { month: "07", plan: "1.2", fact: null, deviation: null },
+      { month: "08", plan: "1.25", fact: null, deviation: null },
+      { month: "09", plan: "1.3", fact: null, deviation: null },
+      { month: "10", plan: "1.3", fact: null, deviation: null },
+      { month: "11", plan: "1.3", fact: null, deviation: null },
+      { month: "12", plan: "1.3", fact: null, deviation: null }
+    ]
+  },
+  {
+    name: "RGU в BIG_B2B, услуг на клиента, ед.",
+    comment: "В контрольной точке 08 сохраняется последняя утвержденная квартальная цель до следующей вехи 09.",
+    rows: [
+      { month: "04", plan: "1.1", fact: null, deviation: null },
+      { month: "05", plan: "1.1", fact: null, deviation: null },
+      { month: "06", plan: "1.2", fact: null, deviation: null },
+      { month: "07", plan: "1.2", fact: null, deviation: null },
+      { month: "08", plan: "1.3", fact: null, deviation: null },
+      { month: "09", plan: "1.3", fact: null, deviation: null },
+      { month: "10", plan: "1.4", fact: null, deviation: null },
+      { month: "11", plan: "1.4", fact: null, deviation: null },
+      { month: "12", plan: "1.5", fact: null, deviation: null }
+    ]
+  }
+];
+
 const dashboard = {
   generatedAt: "2026-05-04T23:05:00+07:00",
   latestPeriod: "27.04 и 04.05.2026",
@@ -48,6 +118,49 @@ const dashboard = {
       level: "warning",
       project: "S-26-42 Создание отдела дистанционных продаж",
       text: "Прогресс 60%. Операционный дашборд и план продаж на май не закрыты, запуск холодного контура смещается."
+    }
+  ],
+  charterSnapshotSeeds: [
+    {
+      id: "seed-s-26-27-2026-04-v08",
+      projectCode: "S-26-27",
+      projectName: "Новые продукты B2B",
+      snapshotMonth: "2026-04",
+      charterVersion: "v08",
+      charterDate: "2026-04-04",
+      uploadedAt: "2026-04-05T10:15:00+07:00",
+      uploadedBy: "Стартовый импорт",
+      comment: "Демо-срез из приложенного устава. Показывает стартовую точку по разделу 6.",
+      status: "verified",
+      verifiedAt: "2026-04-05T10:30:00+07:00",
+      sourceFileName: "S-26-27 Новые продукты B2B.md",
+      sourceMime: "text/markdown",
+      sourceSize: 0,
+      sourceText: "",
+      warnings: [
+        "Это демонстрационный seed без вложенного исходного markdown. Для рабочего архива загрузите реальный устав через форму проекта."
+      ],
+      metrics: charterSnapshotMetricSeed
+    },
+    {
+      id: "seed-s-26-27-2026-05-v08",
+      projectCode: "S-26-27",
+      projectName: "Новые продукты B2B",
+      snapshotMonth: "2026-05",
+      charterVersion: "v08",
+      charterDate: "2026-04-04",
+      uploadedAt: "2026-05-06T09:40:00+07:00",
+      uploadedBy: "Стартовый импорт",
+      comment: "Демо-майский срез на том же уставе: видно, как история хранится помесячно и подсвечивает пустой факт.",
+      status: "needs-review",
+      sourceFileName: "S-26-27 Новые продукты B2B.md",
+      sourceMime: "text/markdown",
+      sourceSize: 0,
+      sourceText: "",
+      warnings: [
+        "В майском срезе по нескольким KPI факт ещё не заполнен. Модуль должен хранить такой срез, но помечать его как требующий проверки."
+      ],
+      metrics: charterSnapshotMetricSeed
     }
   ],
   projects: [

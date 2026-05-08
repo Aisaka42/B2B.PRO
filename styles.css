@@ -414,6 +414,13 @@ select {
 }
 .tag.missing::before { background: #5f5f5f; }
 
+.tag.accent {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: rgba(255, 107, 0, 0.24);
+}
+.tag.accent::before { background: var(--accent); }
+
 .projectsGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -800,7 +807,7 @@ select {
 }
 
 .archiveMetrics {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .archiveToolbar {
@@ -912,6 +919,357 @@ select {
   color: var(--text);
 }
 
+.snapshotShell {
+  padding: 0;
+  overflow: hidden;
+}
+
+.snapshotDetails {
+  display: grid;
+}
+
+.snapshotSummaryBar {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 18px;
+}
+
+.snapshotSummaryBar::-webkit-details-marker {
+  display: none;
+}
+
+.snapshotKicker,
+.snapshotEyebrow {
+  color: var(--soft);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.snapshotSummaryBar strong,
+.snapshotCard h4 {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.snapshotSummaryMeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.snapshotBody {
+  display: grid;
+  gap: 16px;
+  padding: 0 18px 18px;
+}
+
+.snapshotTabBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.snapshotTabButton {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 160ms ease;
+}
+
+.snapshotTabButton:hover:not(:disabled) {
+  border-color: rgba(255, 107, 0, 0.36);
+  color: var(--text);
+}
+
+.snapshotTabButton.active {
+  background: rgba(255, 107, 0, 0.12);
+  border-color: rgba(255, 107, 0, 0.22);
+  color: var(--accent);
+}
+
+.snapshotTabButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.snapshotPane {
+  display: grid;
+  gap: 16px;
+}
+
+.snapshotForm {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 107, 0, 0.06);
+  border: 1px solid rgba(255, 107, 0, 0.14);
+}
+
+.snapshotFormGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--text);
+  padding: 12px 14px;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+.field-wide {
+  grid-column: 1 / -1;
+}
+
+.snapshotFormFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.snapshotCard,
+.snapshotEmpty {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.snapshotEmpty.subtle {
+  background: rgba(29, 29, 29, 0.03);
+}
+
+.snapshotCardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.snapshotCardTop h4 {
+  margin: 0;
+}
+
+.snapshotCardTop p,
+.snapshotEmpty span,
+.snapshotMetricComment {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.snapshotMiniMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  color: var(--soft);
+  font-size: 13px;
+}
+
+.snapshotCallout {
+  display: grid;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 198, 26, 0.16);
+  border: 1px solid rgba(255, 198, 26, 0.28);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.snapshotTableShell {
+  overflow-x: auto;
+}
+
+.snapshotTable {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.snapshotTable.compact {
+  min-width: 620px;
+}
+
+.snapshotTable th,
+.snapshotTable td {
+  padding: 13px 12px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.snapshotTable th {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+.snapshotTable .is-current td {
+  background: rgba(255, 107, 0, 0.08);
+}
+
+.tableActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.trendGrid,
+.snapshotMetricGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.trendCard,
+.snapshotMetricCard {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(29, 29, 29, 0.02);
+}
+
+.trendHeader,
+.snapshotMetricTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.trendHeader strong,
+.snapshotMetricTop h5 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.trendHeader span,
+.trendLegend,
+.trendValues {
+  color: var(--soft);
+  font-size: 12px;
+}
+
+.trendLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.legendDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 999px;
+}
+
+.legendDot.plan,
+.trendBar.plan {
+  background: var(--accent);
+}
+
+.legendDot.fact,
+.trendBar.fact {
+  background: #1d1d1d;
+}
+
+.trendRows {
+  display: grid;
+  gap: 10px;
+}
+
+.trendRow {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 180px;
+  gap: 10px;
+  align-items: center;
+}
+
+.trendMonth {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--soft);
+  text-transform: uppercase;
+}
+
+.trendSeries {
+  display: grid;
+  gap: 6px;
+}
+
+.trendLine {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(29, 29, 29, 0.08);
+  overflow: hidden;
+}
+
+.trendBar {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.trendValues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  justify-content: flex-end;
+  font-family: "IBM Plex Mono", monospace;
+}
+
 @media (max-width: 1180px) {
   .hero,
   .twoCol,
@@ -923,7 +1281,13 @@ select {
   .metricsGrid,
   .managerCards,
   .historyGrid,
-  .archiveMetrics {
+  .archiveMetrics,
+  .trendGrid,
+  .snapshotMetricGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .snapshotFormGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -952,15 +1316,34 @@ select {
   .managerCards,
   .historyGrid,
   .projectMetrics,
-  .archiveMetrics {
+  .archiveMetrics,
+  .trendGrid,
+  .snapshotMetricGrid,
+  .snapshotFormGrid {
     grid-template-columns: 1fr;
   }
 
-  .archiveRow {
+  .archiveRow,
+  .trendRow {
     grid-template-columns: 1fr;
   }
 
   .archiveActions {
+    justify-content: flex-start;
+  }
+
+  .snapshotSummaryBar,
+  .snapshotCardTop,
+  .snapshotFormFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .snapshotTable {
+    min-width: 560px;
+  }
+
+  .trendValues {
     justify-content: flex-start;
   }
 
