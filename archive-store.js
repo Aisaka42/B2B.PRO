@@ -1,21 +1,7 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:58:31.767Z",
+  "version": "2026-05-15T17:58:35.088Z",
   "archiveDocs": [
-    {
-      "id": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 8582,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:45:22.801Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
-    },
     {
       "id": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
       "name": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
