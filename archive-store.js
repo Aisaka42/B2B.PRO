@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:53:53.803Z",
+  "version": "2026-05-15T17:55:19.059Z",
   "archiveDocs": [
     {
       "id": "checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -15,20 +15,6 @@ window.archiveRepoData = {
       "mime": "application/octet-stream",
       "savedAt": "2026-05-15T17:53:49.694Z",
       "filePath": "./archive/weekly/checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 7401,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:45:22.802Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
     },
     {
       "id": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
