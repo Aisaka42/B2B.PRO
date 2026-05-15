@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:44:02.698Z",
+  "version": "2026-05-15T17:44:56.875Z",
   "archiveDocs": [
     {
       "id": "rating_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -13,7 +13,7 @@ window.archiveRepoData = {
       "ext": "md",
       "size": 7678,
       "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:43:55.544Z",
+      "savedAt": "2026-05-15T17:44:50.298Z",
       "filePath": "./archive/weekly/rating_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
     },
     {
@@ -27,7 +27,7 @@ window.archiveRepoData = {
       "ext": "md",
       "size": 8009,
       "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:43:55.543Z",
+      "savedAt": "2026-05-15T17:44:50.295Z",
       "filePath": "./archive/weekly/rating_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
     },
     {
@@ -41,7 +41,7 @@ window.archiveRepoData = {
       "ext": "md",
       "size": 7738,
       "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:43:55.541Z",
+      "savedAt": "2026-05-15T17:44:50.293Z",
       "filePath": "./archive/weekly/rating_15.05.2026_S-26-27_Новые продукты B2B.md"
     },
     {
@@ -55,7 +55,7 @@ window.archiveRepoData = {
       "ext": "md",
       "size": 7383,
       "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:43:55.537Z",
+      "savedAt": "2026-05-15T17:44:50.288Z",
       "filePath": "./archive/weekly/rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md"
     },
     {
