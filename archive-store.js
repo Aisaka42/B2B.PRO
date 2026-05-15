@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:58:54.294Z",
+  "version": "2026-05-15T17:58:57.447Z",
   "archiveDocs": [
     {
       "id": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
