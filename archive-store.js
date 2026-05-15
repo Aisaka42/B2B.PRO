@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:57:30.601Z",
+  "version": "2026-05-15T17:57:41.626Z",
   "archiveDocs": [
     {
       "id": "checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -85,20 +85,6 @@ window.archiveRepoData = {
       "mime": "application/octet-stream",
       "savedAt": "2026-05-15T17:44:50.288Z",
       "filePath": "./archive/weekly/rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md"
-    },
-    {
-      "id": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "rating_12.05.2026_S_26_42 Создание отдела дистанционных продаж.md",
-      "type": "rating",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 7954,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:42:38.026Z",
-      "filePath": "./archive/weekly/rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
     },
     {
       "id": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
