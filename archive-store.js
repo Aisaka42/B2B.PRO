@@ -1,7 +1,21 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T18:09:47.667Z",
+  "version": "2026-05-15T18:10:49.675Z",
   "archiveDocs": [
+    {
+      "id": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "name": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "sourceName": "project_protocol (5) 08.05.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-19",
+      "projectName": "Новые доходы BIG_B2B",
+      "periodDate": "12.05.2026",
+      "ext": "md",
+      "size": 4973,
+      "mime": "application/octet-stream",
+      "savedAt": "2026-05-15T18:10:46.227Z",
+      "filePath": "./archive/weekly/project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md"
+    },
     {
       "id": "project_protocol_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
       "name": "project_protocol_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -43,20 +57,6 @@ window.archiveRepoData = {
       "mime": "application/octet-stream",
       "savedAt": "2026-05-15T18:09:40.459Z",
       "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md"
-    },
-    {
-      "id": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "sourceName": "project_protocol (5) 08.05.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 4973,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:09:40.454Z",
-      "filePath": "./archive/weekly/project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md"
     },
     {
       "id": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
