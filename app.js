@@ -3057,6 +3057,7 @@ function archiveMarkup() {
               <span>Сохранён: ${escapeHtml(formatDate(item.savedAt))}</span>
             </div>
             <div class="archiveFileName">${escapeHtml(item.name)}</div>
+            ${item.sourceName && item.sourceName !== item.name ? `<div class="archiveMeta"><span>Исходное имя: ${escapeHtml(item.sourceName)}</span></div>` : ""}
           </div>
           <div class="archiveActions">
             <button class="archiveButton" data-archive-download="${escapeHtml(item.id)}">Скачать</button>
@@ -3892,6 +3893,8 @@ async function saveArchiveFiles(files) {
     return;
   }
 
+  const existingIds = new Set(state.archiveDocs.map((item) => item.id));
+  const previousLatestWeek = currentDashboard()?.summary?.newestReportDate || "";
   const checks = await Promise.all(files.map(inspectWeeklyFile));
   state.fileChecks = checks;
 
@@ -3904,6 +3907,7 @@ async function saveArchiveFiles(files) {
 
   const uploadedDocs = [];
   let renamedCount = 0;
+  let replacedCount = 0;
 
   for (let index = 0; index < files.length; index += 1) {
     const file = files[index];
@@ -3911,6 +3915,9 @@ async function saveArchiveFiles(files) {
     const { parsed, resolvedName } = check;
     if (resolvedName !== file.name) {
       renamedCount += 1;
+    }
+    if (existingIds.has(resolvedName)) {
+      replacedCount += 1;
     }
     const blob = new Blob([await file.arrayBuffer()], {
       type: file.type || "application/octet-stream"
@@ -3950,16 +3957,22 @@ async function saveArchiveFiles(files) {
 
   state.archiveDocs = await archiveGetAll();
   await rebuildDashboardModel();
+  const latestWeekAfterSave = currentDashboard()?.summary?.newestReportDate || "";
+  const uploadedWeeks = [...new Set(uploadedDocs.map((item) => item.periodDate).filter(Boolean))];
+  const uploadedOnlyPastWeeks = uploadedWeeks.length
+    && latestWeekAfterSave
+    && uploadedWeeks.every((week) => week !== latestWeekAfterSave)
+    && (previousLatestWeek ? previousLatestWeek === latestWeekAfterSave : true);
   const token = activeGitHubToken();
 
   if (!uploadApiConfigured()) {
-    state.archiveMessage = `Сохранено файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""} Сейчас они видны только локально в этом браузере, потому что сервис общей загрузки ещё не настроен.`;
+    state.archiveMessage = `Сохранено файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""}${replacedCount ? ` Обновлено существующих weekly: ${replacedCount}.` : ""}${uploadedOnlyPastWeeks ? ` Файлы относятся к более ранней неделе (${uploadedWeeks.join(", ")}), поэтому верхняя сводка текущей недели не изменилась.` : ""} Сейчас они видны только локально в этом браузере, потому что сервис общей загрузки ещё не настроен.`;
     render();
     return;
   }
 
   if (!token) {
-    state.archiveMessage = `Сохранено файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""} Сейчас они видны только локально в этом браузере. Чтобы weekly увидели все, введите пароль загрузки.`;
+    state.archiveMessage = `Сохранено файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""}${replacedCount ? ` Обновлено существующих weekly: ${replacedCount}.` : ""}${uploadedOnlyPastWeeks ? ` Файлы относятся к более ранней неделе (${uploadedWeeks.join(", ")}), поэтому верхняя сводка текущей недели не изменилась.` : ""} Сейчас они видны только локально в этом браузере. Чтобы weekly увидели все, введите пароль загрузки.`;
     render();
     return;
   }
@@ -3984,7 +3997,7 @@ async function saveArchiveFiles(files) {
     state.snapshotRecords = await snapshotGetAll();
     await rebuildDashboardModel();
     persistGitHubSyncSettings();
-    state.archiveMessage = `Сохранено и опубликовано файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""} Все вкладки сайта обновлены по общему архиву.`;
+    state.archiveMessage = `Сохранено и опубликовано файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""}${replacedCount ? ` Обновлено существующих weekly: ${replacedCount}.` : ""}${uploadedOnlyPastWeeks ? ` Файлы относятся к более ранней неделе (${uploadedWeeks.join(", ")}), поэтому верхняя сводка текущей недели не изменилась, а история и динамика пересчитаны.` : " Все вкладки сайта обновлены по общему архиву."}`;
     state.githubStatus = `Weekly опубликованы в общий архив ${repoLabel()}.`;
   } catch (error) {
     state.archiveMessage = `Файлы сохранены локально, но не опубликованы в общий архив: ${error.message}`;
