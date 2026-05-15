@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:59:01.770Z",
+  "version": "2026-05-15T17:59:12.357Z",
   "archiveDocs": [
     {
       "id": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
@@ -15,20 +15,6 @@ window.archiveRepoData = {
       "mime": "application/octet-stream",
       "savedAt": "2026-05-15T17:45:22.800Z",
       "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 6376,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:45:22.797Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md"
     },
     {
       "id": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
