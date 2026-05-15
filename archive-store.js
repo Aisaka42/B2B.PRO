@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:57:21.488Z",
+  "version": "2026-05-15T17:57:25.560Z",
   "archiveDocs": [
     {
       "id": "checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
