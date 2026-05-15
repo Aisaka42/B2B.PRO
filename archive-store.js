@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T18:11:21.793Z",
+  "version": "2026-05-15T18:23:28.750Z",
   "archiveDocs": [
     {
       "id": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -439,23 +439,434 @@ window.archiveRepoData = {
   ],
   "snapshotRecords": [
     {
-      "id": "seed-s-26-27-2026-04-v08",
+      "id": "S-26-19_Апрель_v01_1778869405931",
+      "projectCode": "S-26-19",
+      "projectName": "Новые доходы BIG_B2B",
+      "snapshotMonth": "Апрель",
+      "charterVersion": "v01",
+      "charterDate": "2026-03-29",
+      "section": "6. План/факт",
+      "metrics": [
+        {
+          "name": "Новые доходы накопительно BIG_B2B, руб.",
+          "comment": "",
+          "rows": [
+            {
+              "month": "01",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "02",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "03",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "04",
+              "plan": "381 881",
+              "fact": "892 785",
+              "deviation": "+133%*"
+            },
+            {
+              "month": "05",
+              "plan": "798 124",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "06",
+              "plan": "1 239 987",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "07",
+              "plan": "1 609 257",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "08",
+              "plan": "2 115 414",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "09",
+              "plan": "2 662 666",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "10",
+              "plan": "3 239 848",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "11",
+              "plan": "3 853 224",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "12",
+              "plan": "5 147 949",
+              "fact": null,
+              "deviation": null
+            }
+          ]
+        },
+        {
+          "name": "Производительность МАП, руб.",
+          "comment": "",
+          "rows": [
+            {
+              "month": "01",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "02",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "03",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "04",
+              "plan": "16 000",
+              "fact": "26 000",
+              "deviation": "+61%*"
+            },
+            {
+              "month": "05",
+              "plan": "17 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "06",
+              "plan": "18 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "07",
+              "plan": "20 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "08",
+              "plan": "24 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "09",
+              "plan": "28 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "10",
+              "plan": "32 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "11",
+              "plan": "34 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "12",
+              "plan": "36 000",
+              "fact": null,
+              "deviation": null
+            }
+          ]
+        },
+        {
+          "name": "Производительность РОП, руб.",
+          "comment": "",
+          "rows": [
+            {
+              "month": "01",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "02",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "03",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "04",
+              "plan": "10 000",
+              "fact": "4 140",
+              "deviation": "-59%"
+            },
+            {
+              "month": "05",
+              "plan": "18 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "06",
+              "plan": "25 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "07",
+              "plan": "30 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "08",
+              "plan": "35 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "09",
+              "plan": "40 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "10",
+              "plan": "45 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "11",
+              "plan": "47 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "12",
+              "plan": "50 000",
+              "fact": null,
+              "deviation": null
+            }
+          ]
+        },
+        {
+          "name": "ARPPU МАП на 1 ИНН, руб.",
+          "comment": "",
+          "rows": [
+            {
+              "month": "01",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "02",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "03",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "04",
+              "plan": "2 700",
+              "fact": "4 399",
+              "deviation": "+62%*"
+            },
+            {
+              "month": "05",
+              "plan": "4 500",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "06",
+              "plan": "6 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "07",
+              "plan": "6 500",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "08",
+              "plan": "7 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "09",
+              "plan": "7 500",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "10",
+              "plan": "8 000",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "11",
+              "plan": "8 500",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "12",
+              "plan": "9 000",
+              "fact": null,
+              "deviation": null
+            }
+          ]
+        },
+        {
+          "name": "RGU",
+          "comment": "",
+          "rows": [
+            {
+              "month": "01",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "02",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "03",
+              "plan": null,
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "04",
+              "plan": "1.1",
+              "fact": "1,07",
+              "deviation": "-3%"
+            },
+            {
+              "month": "05",
+              "plan": "1.2",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "06",
+              "plan": "1.3",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "07",
+              "plan": "1.3",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "08",
+              "plan": "1.3",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "09",
+              "plan": "1.4",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "10",
+              "plan": "1.4",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "11",
+              "plan": "1.4",
+              "fact": null,
+              "deviation": null
+            },
+            {
+              "month": "12",
+              "plan": "1.5",
+              "fact": null,
+              "deviation": null
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "errors": [],
+      "status": "uploaded",
+      "uploadedAt": "2026-05-15T18:23:25.930Z",
+      "uploadedBy": "Тарбах Анастасия",
+      "comment": "Добавила факт апреля по показателям",
+      "sourceFileName": "S-26-19 Новые доходы BIG_B2B.md",
+      "sourceMime": "text/markdown",
+      "sourceSize": 65960,
+      "sourceText": "",
+      "sourceFilePath": "./archive/charters/S-26-19 Новые доходы BIG_B2B.md"
+    },
+    {
+      "id": "seed-s-26-27-2026-05-v08",
       "projectCode": "S-26-27",
       "projectName": "Новые продукты B2B",
-      "snapshotMonth": "2026-04",
+      "snapshotMonth": "2026-05",
       "charterVersion": "v08",
       "charterDate": "2026-04-04",
-      "uploadedAt": "2026-04-05T10:15:00+07:00",
+      "uploadedAt": "2026-05-06T09:40:00+07:00",
       "uploadedBy": "Стартовый импорт",
-      "comment": "Демо-срез из приложенного устава. Показывает стартовую точку по разделу 6.",
-      "status": "verified",
-      "verifiedAt": "2026-04-05T10:30:00+07:00",
+      "comment": "Демо-майский срез на том же уставе: видно, как история хранится помесячно и подсвечивает пустой факт.",
+      "status": "needs-review",
       "sourceFileName": "S-26-27 Новые продукты B2B.md",
       "sourceMime": "text/markdown",
       "sourceSize": 0,
       "sourceText": "",
       "warnings": [
-        "Это демонстрационный seed без вложенного исходного markdown. Для рабочего архива загрузите реальный устав через форму проекта."
+        "В майском срезе по нескольким KPI факт ещё не заполнен. Модуль должен хранить такой срез, но помечать его как требующий проверки."
       ],
       "metrics": [
         {
@@ -713,22 +1124,23 @@ window.archiveRepoData = {
       ]
     },
     {
-      "id": "seed-s-26-27-2026-05-v08",
+      "id": "seed-s-26-27-2026-04-v08",
       "projectCode": "S-26-27",
       "projectName": "Новые продукты B2B",
-      "snapshotMonth": "2026-05",
+      "snapshotMonth": "2026-04",
       "charterVersion": "v08",
       "charterDate": "2026-04-04",
-      "uploadedAt": "2026-05-06T09:40:00+07:00",
+      "uploadedAt": "2026-04-05T10:15:00+07:00",
       "uploadedBy": "Стартовый импорт",
-      "comment": "Демо-майский срез на том же уставе: видно, как история хранится помесячно и подсвечивает пустой факт.",
-      "status": "needs-review",
+      "comment": "Демо-срез из приложенного устава. Показывает стартовую точку по разделу 6.",
+      "status": "verified",
+      "verifiedAt": "2026-04-05T10:30:00+07:00",
       "sourceFileName": "S-26-27 Новые продукты B2B.md",
       "sourceMime": "text/markdown",
       "sourceSize": 0,
       "sourceText": "",
       "warnings": [
-        "В майском срезе по нескольким KPI факт ещё не заполнен. Модуль должен хранить такой срез, но помечать его как требующий проверки."
+        "Это демонстрационный seed без вложенного исходного markdown. Для рабочего архива загрузите реальный устав через форму проекта."
       ],
       "metrics": [
         {
