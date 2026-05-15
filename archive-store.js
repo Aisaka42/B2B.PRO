@@ -1,21 +1,7 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T17:59:12.357Z",
+  "version": "2026-05-15T17:59:15.788Z",
   "archiveDocs": [
-    {
-      "id": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "name": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 9221,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T17:45:22.800Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md"
-    },
     {
       "id": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
       "name": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
