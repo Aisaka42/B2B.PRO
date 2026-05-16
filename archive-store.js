@@ -1,299 +1,19 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-15T18:23:28.750Z",
+  "version": "2026-05-08T12:35:00+07:00",
   "archiveDocs": [
     {
-      "id": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "rating_12.05.2026_S_26_42 Создание отдела дистанционных продаж.md",
-      "type": "rating",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 7954,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:11:14.658Z",
-      "filePath": "./archive/weekly/rating_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
-    },
-    {
-      "id": "rating_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "rating_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "sourceName": "rating_12.05.2026_S_26_41 Рост производительности территориальных менеджеров.md",
-      "type": "rating",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 7739,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:11:14.657Z",
-      "filePath": "./archive/weekly/rating_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
-    },
-    {
-      "id": "rating_08.05.2026_S-26-27_Новые Продукты B2B.md",
-      "name": "rating_08.05.2026_S-26-27_Новые Продукты B2B.md",
-      "sourceName": "raiting_08.05.2026_S-26-27_Новые Продукты B2B.md",
-      "type": "rating",
-      "projectCode": "S-26-27",
-      "projectName": "Новые Продукты B2B",
-      "periodDate": "08.05.2026",
-      "ext": "md",
-      "size": 7580,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:11:14.654Z",
-      "filePath": "./archive/weekly/rating_08.05.2026_S-26-27_Новые Продукты B2B.md"
-    },
-    {
-      "id": "checklist_12.05.2026_S-26-19_Новые доходы BIG_B2B.md.md",
-      "name": "checklist_12.05.2026_S-26-19_Новые доходы BIG_B2B.md.md",
-      "sourceName": "checklist_12.05.2026_S-26-19_Новые доходы BIG_B2B.md.md",
-      "type": "checklist",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B.md",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 7036,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:11:14.652Z",
-      "filePath": "./archive/weekly/checklist_12.05.2026_S-26-19_Новые доходы BIG_B2B.md.md"
-    },
-    {
-      "id": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "sourceName": "project_protocol (5) 08.05.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 4973,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:10:46.227Z",
-      "filePath": "./archive/weekly/project_protocol_12.05.2026_S-26-19_Новые доходы BIG_B2B.md"
-    },
-    {
-      "id": "project_protocol_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "project_protocol_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "S-26-42 · Создание отдела дистанционных продаж.md",
+      "id": "project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "name": "project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
       "type": "project_protocol",
       "projectCode": "S-26-42",
       "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 7877,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:09:40.461Z",
-      "filePath": "./archive/weekly/project_protocol_12.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
-    },
-    {
-      "id": "project_protocol_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "project_protocol_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "sourceName": "project_protocol_12.05.2026_S_26_41 Рост производительности территориальных менеджеров.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "12.05.2026",
-      "ext": "md",
-      "size": 9248,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:09:40.460Z",
-      "filePath": "./archive/weekly/project_protocol_12.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
-    },
-    {
-      "id": "project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "name": "project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "sourceName": "project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
       "periodDate": "04.05.2026",
       "ext": "md",
-      "size": 9753,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:09:40.459Z",
-      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md"
-    },
-    {
-      "id": "rating_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "rating_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "sourceName": "rating_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "rating",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 8009,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:03:00.033Z",
-      "filePath": "./archive/weekly/rating_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
-    },
-    {
-      "id": "rating_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "name": "rating_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "sourceName": "rating_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "type": "rating",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 7738,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:03:00.029Z",
-      "filePath": "./archive/weekly/rating_15.05.2026_S-26-27_Новые продукты B2B.md"
-    },
-    {
-      "id": "rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "sourceName": "rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "type": "rating",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 7383,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:03:00.008Z",
-      "filePath": "./archive/weekly/rating_15.05.2026_S-26-19_Новые доходы BIG_B2B.md"
-    },
-    {
-      "id": "checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "r!!ating_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "type": "checklist",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 7678,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:02:59.987Z",
-      "filePath": "./archive/weekly/checklist_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 7401,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:00:24.007Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 8582,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:00:24.005Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-41_Рост производительности территориальных менеджеров.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "name": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 9221,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:00:24.004Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-27_Новые продукты B2B.md"
-    },
-    {
-      "id": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "sourceName": "project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "15.05.2026",
-      "ext": "md",
-      "size": 6376,
-      "mime": "application/octet-stream",
-      "savedAt": "2026-05-15T18:00:24.001Z",
-      "filePath": "./archive/weekly/project_protocol_15.05.2026_S-26-19_Новые доходы BIG_B2B.md"
-    },
-    {
-      "id": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "type": "checklist",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "04.05.2026",
-      "ext": "md",
-      "size": 8311,
+      "size": 8727,
       "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:14:00+07:00",
-      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "checklist",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "04.05.2026",
-      "ext": "md",
-      "size": 8122,
-      "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:13:00+07:00",
-      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "name": "checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "type": "checklist",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "04.05.2026",
-      "ext": "md",
-      "size": 7800,
-      "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:12:00+07:00",
-      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "type": "checklist",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "periodDate": "04.05.2026",
-      "ext": "md",
-      "size": 7384,
-      "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:11:00+07:00",
-      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "04.05.2026",
-      "ext": "md",
-      "size": 8398,
-      "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:04:00+07:00",
-      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "savedAt": "2026-05-04T12:01:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
       "contentBase64": ""
     },
     {
@@ -311,101 +31,101 @@ window.archiveRepoData = {
       "contentBase64": ""
     },
     {
-      "id": "project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "id": "project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
+      "name": "project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
       "type": "project_protocol",
+      "projectCode": "S-26-27",
+      "projectName": "Новые продукты B2B",
+      "periodDate": "04.05.2026",
+      "ext": "md",
+      "size": 9971,
+      "mime": "text/markdown",
+      "savedAt": "2026-05-04T12:03:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-27_Новые продукты B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "name": "project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-41",
+      "projectName": "Рост производительности территориальных менеджеров",
+      "periodDate": "04.05.2026",
+      "ext": "md",
+      "size": 8398,
+      "mime": "text/markdown",
+      "savedAt": "2026-05-04T12:04:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "name": "checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "type": "checklist",
+      "projectCode": "S-26-19",
+      "projectName": "Новые доходы BIG_B2B",
+      "periodDate": "04.05.2026",
+      "ext": "md",
+      "size": 7384,
+      "mime": "text/markdown",
+      "savedAt": "2026-05-04T12:11:00+07:00",
+      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
+      "name": "checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
+      "type": "checklist",
+      "projectCode": "S-26-27",
+      "projectName": "Новые продукты B2B",
+      "periodDate": "04.05.2026",
+      "ext": "md",
+      "size": 7800,
+      "mime": "text/markdown",
+      "savedAt": "2026-05-04T12:12:00+07:00",
+      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-27_Новые продукты B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "name": "checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "type": "checklist",
+      "projectCode": "S-26-41",
+      "projectName": "Рост производительности территориальных менеджеров",
+      "periodDate": "04.05.2026",
+      "ext": "md",
+      "size": 8122,
+      "mime": "text/markdown",
+      "savedAt": "2026-05-04T12:13:00+07:00",
+      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "name": "checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "type": "checklist",
       "projectCode": "S-26-42",
       "projectName": "Создание отдела дистанционных продаж",
       "periodDate": "04.05.2026",
       "ext": "md",
-      "size": 8727,
+      "size": 8311,
       "mime": "text/markdown",
-      "savedAt": "2026-05-04T12:01:00+07:00",
-      "filePath": "./archive/weekly/project_protocol_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "savedAt": "2026-05-04T12:14:00+07:00",
+      "filePath": "./archive/weekly/checklist_04.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
       "contentBase64": ""
     },
     {
-      "id": "checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "checklist",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "27.04.2026",
-      "ext": "md",
-      "size": 7767,
-      "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:14:00+07:00",
-      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "type": "checklist",
+      "id": "project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "name": "project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "type": "project_protocol",
       "projectCode": "S-26-19",
       "projectName": "Новые доходы BIG_B2B",
       "periodDate": "27.04.2026",
       "ext": "md",
-      "size": 7416,
+      "size": 6336,
       "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:13:00+07:00",
-      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "name": "checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "type": "checklist",
-      "projectCode": "S-26-42",
-      "projectName": "Создание отдела дистанционных продаж",
-      "periodDate": "27.04.2026",
-      "ext": "md",
-      "size": 8030,
-      "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:12:00+07:00",
-      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
-      "name": "checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
-      "type": "checklist",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "27.04.2026",
-      "ext": "md",
-      "size": 7626,
-      "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:11:00+07:00",
-      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "name": "project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-41",
-      "projectName": "Рост производительности территориальных менеджеров",
-      "periodDate": "27.04.2026",
-      "ext": "md",
-      "size": 9942,
-      "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:04:00+07:00",
-      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
-      "contentBase64": ""
-    },
-    {
-      "id": "project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
-      "name": "project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
-      "type": "project_protocol",
-      "projectCode": "S-26-27",
-      "projectName": "Новые продукты B2B",
-      "periodDate": "27.04.2026",
-      "ext": "md",
-      "size": 7672,
-      "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:03:00+07:00",
-      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "savedAt": "2026-04-27T12:01:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
       "contentBase64": ""
     },
     {
@@ -423,450 +143,109 @@ window.archiveRepoData = {
       "contentBase64": ""
     },
     {
-      "id": "project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
-      "name": "project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "id": "project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "name": "project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
       "type": "project_protocol",
+      "projectCode": "S-26-27",
+      "projectName": "Новые продукты B2B",
+      "periodDate": "27.04.2026",
+      "ext": "md",
+      "size": 7672,
+      "mime": "text/markdown",
+      "savedAt": "2026-04-27T12:03:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "name": "project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-41",
+      "projectName": "Рост производительности территориальных менеджеров",
+      "periodDate": "27.04.2026",
+      "ext": "md",
+      "size": 9942,
+      "mime": "text/markdown",
+      "savedAt": "2026-04-27T12:04:00+07:00",
+      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "name": "checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "type": "checklist",
+      "projectCode": "S-26-27",
+      "projectName": "Новые продукты B2B",
+      "periodDate": "27.04.2026",
+      "ext": "md",
+      "size": 7626,
+      "mime": "text/markdown",
+      "savedAt": "2026-04-27T12:11:00+07:00",
+      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-27_Новые продукты B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "name": "checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "type": "checklist",
+      "projectCode": "S-26-42",
+      "projectName": "Создание отдела дистанционных продаж",
+      "periodDate": "27.04.2026",
+      "ext": "md",
+      "size": 8030,
+      "mime": "text/markdown",
+      "savedAt": "2026-04-27T12:12:00+07:00",
+      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-42_Создание отдела дистанционных продаж.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "name": "checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "type": "checklist",
       "projectCode": "S-26-19",
       "projectName": "Новые доходы BIG_B2B",
       "periodDate": "27.04.2026",
       "ext": "md",
-      "size": 6336,
+      "size": 7416,
       "mime": "text/markdown",
-      "savedAt": "2026-04-27T12:01:00+07:00",
-      "filePath": "./archive/weekly/project_protocol_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "savedAt": "2026-04-27T12:13:00+07:00",
+      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "contentBase64": ""
+    },
+    {
+      "id": "checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "name": "checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
+      "type": "checklist",
+      "projectCode": "S-26-41",
+      "projectName": "Рост производительности территориальных менеджеров",
+      "periodDate": "27.04.2026",
+      "ext": "md",
+      "size": 7767,
+      "mime": "text/markdown",
+      "savedAt": "2026-04-27T12:14:00+07:00",
+      "filePath": "./archive/weekly/checklist_27.04.2026_S-26-41_Рост производительности территориальных менеджеров.md",
       "contentBase64": ""
     }
   ],
   "snapshotRecords": [
     {
-      "id": "S-26-19_Апрель_v01_1778869405931",
-      "projectCode": "S-26-19",
-      "projectName": "Новые доходы BIG_B2B",
-      "snapshotMonth": "Апрель",
-      "charterVersion": "v01",
-      "charterDate": "2026-03-29",
-      "section": "6. План/факт",
-      "metrics": [
-        {
-          "name": "Новые доходы накопительно BIG_B2B, руб.",
-          "comment": "",
-          "rows": [
-            {
-              "month": "01",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "02",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "03",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "04",
-              "plan": "381 881",
-              "fact": "892 785",
-              "deviation": "+133%*"
-            },
-            {
-              "month": "05",
-              "plan": "798 124",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "06",
-              "plan": "1 239 987",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "07",
-              "plan": "1 609 257",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "08",
-              "plan": "2 115 414",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "09",
-              "plan": "2 662 666",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "10",
-              "plan": "3 239 848",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "11",
-              "plan": "3 853 224",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "12",
-              "plan": "5 147 949",
-              "fact": null,
-              "deviation": null
-            }
-          ]
-        },
-        {
-          "name": "Производительность МАП, руб.",
-          "comment": "",
-          "rows": [
-            {
-              "month": "01",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "02",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "03",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "04",
-              "plan": "16 000",
-              "fact": "26 000",
-              "deviation": "+61%*"
-            },
-            {
-              "month": "05",
-              "plan": "17 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "06",
-              "plan": "18 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "07",
-              "plan": "20 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "08",
-              "plan": "24 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "09",
-              "plan": "28 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "10",
-              "plan": "32 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "11",
-              "plan": "34 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "12",
-              "plan": "36 000",
-              "fact": null,
-              "deviation": null
-            }
-          ]
-        },
-        {
-          "name": "Производительность РОП, руб.",
-          "comment": "",
-          "rows": [
-            {
-              "month": "01",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "02",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "03",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "04",
-              "plan": "10 000",
-              "fact": "4 140",
-              "deviation": "-59%"
-            },
-            {
-              "month": "05",
-              "plan": "18 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "06",
-              "plan": "25 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "07",
-              "plan": "30 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "08",
-              "plan": "35 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "09",
-              "plan": "40 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "10",
-              "plan": "45 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "11",
-              "plan": "47 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "12",
-              "plan": "50 000",
-              "fact": null,
-              "deviation": null
-            }
-          ]
-        },
-        {
-          "name": "ARPPU МАП на 1 ИНН, руб.",
-          "comment": "",
-          "rows": [
-            {
-              "month": "01",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "02",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "03",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "04",
-              "plan": "2 700",
-              "fact": "4 399",
-              "deviation": "+62%*"
-            },
-            {
-              "month": "05",
-              "plan": "4 500",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "06",
-              "plan": "6 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "07",
-              "plan": "6 500",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "08",
-              "plan": "7 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "09",
-              "plan": "7 500",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "10",
-              "plan": "8 000",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "11",
-              "plan": "8 500",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "12",
-              "plan": "9 000",
-              "fact": null,
-              "deviation": null
-            }
-          ]
-        },
-        {
-          "name": "RGU",
-          "comment": "",
-          "rows": [
-            {
-              "month": "01",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "02",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "03",
-              "plan": null,
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "04",
-              "plan": "1.1",
-              "fact": "1,07",
-              "deviation": "-3%"
-            },
-            {
-              "month": "05",
-              "plan": "1.2",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "06",
-              "plan": "1.3",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "07",
-              "plan": "1.3",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "08",
-              "plan": "1.3",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "09",
-              "plan": "1.4",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "10",
-              "plan": "1.4",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "11",
-              "plan": "1.4",
-              "fact": null,
-              "deviation": null
-            },
-            {
-              "month": "12",
-              "plan": "1.5",
-              "fact": null,
-              "deviation": null
-            }
-          ]
-        }
-      ],
-      "warnings": [],
-      "errors": [],
-      "status": "uploaded",
-      "uploadedAt": "2026-05-15T18:23:25.930Z",
-      "uploadedBy": "Тарбах Анастасия",
-      "comment": "Добавила факт апреля по показателям",
-      "sourceFileName": "S-26-19 Новые доходы BIG_B2B.md",
-      "sourceMime": "text/markdown",
-      "sourceSize": 65960,
-      "sourceText": "",
-      "sourceFilePath": "./archive/charters/S-26-19 Новые доходы BIG_B2B.md"
-    },
-    {
-      "id": "seed-s-26-27-2026-05-v08",
+      "id": "seed-s-26-27-2026-04-v08",
       "projectCode": "S-26-27",
       "projectName": "Новые продукты B2B",
-      "snapshotMonth": "2026-05",
+      "snapshotMonth": "2026-04",
       "charterVersion": "v08",
       "charterDate": "2026-04-04",
-      "uploadedAt": "2026-05-06T09:40:00+07:00",
+      "uploadedAt": "2026-04-05T10:15:00+07:00",
       "uploadedBy": "Стартовый импорт",
-      "comment": "Демо-майский срез на том же уставе: видно, как история хранится помесячно и подсвечивает пустой факт.",
-      "status": "needs-review",
+      "comment": "Демо-срез из приложенного устава. Показывает стартовую точку по разделу 6.",
+      "status": "verified",
+      "verifiedAt": "2026-04-05T10:30:00+07:00",
       "sourceFileName": "S-26-27 Новые продукты B2B.md",
       "sourceMime": "text/markdown",
       "sourceSize": 0,
       "sourceText": "",
       "warnings": [
-        "В майском срезе по нескольким KPI факт ещё не заполнен. Модуль должен хранить такой срез, но помечать его как требующий проверки."
+        "Это демонстрационный seed без вложенного исходного markdown. Для рабочего архива загрузите реальный устав через форму проекта."
       ],
       "metrics": [
         {
@@ -1124,23 +503,22 @@ window.archiveRepoData = {
       ]
     },
     {
-      "id": "seed-s-26-27-2026-04-v08",
+      "id": "seed-s-26-27-2026-05-v08",
       "projectCode": "S-26-27",
       "projectName": "Новые продукты B2B",
-      "snapshotMonth": "2026-04",
+      "snapshotMonth": "2026-05",
       "charterVersion": "v08",
       "charterDate": "2026-04-04",
-      "uploadedAt": "2026-04-05T10:15:00+07:00",
+      "uploadedAt": "2026-05-06T09:40:00+07:00",
       "uploadedBy": "Стартовый импорт",
-      "comment": "Демо-срез из приложенного устава. Показывает стартовую точку по разделу 6.",
-      "status": "verified",
-      "verifiedAt": "2026-04-05T10:30:00+07:00",
+      "comment": "Демо-майский срез на том же уставе: видно, как история хранится помесячно и подсвечивает пустой факт.",
+      "status": "needs-review",
       "sourceFileName": "S-26-27 Новые продукты B2B.md",
       "sourceMime": "text/markdown",
       "sourceSize": 0,
       "sourceText": "",
       "warnings": [
-        "Это демонстрационный seed без вложенного исходного markdown. Для рабочего архива загрузите реальный устав через форму проекта."
+        "В майском срезе по нескольким KPI факт ещё не заполнен. Модуль должен хранить такой срез, но помечать его как требующий проверки."
       ],
       "metrics": [
         {
