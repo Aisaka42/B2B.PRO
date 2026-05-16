@@ -1,6 +1,6 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-16T07:07:08.544Z",
+  "version": "2026-05-16T07:07:57.238Z",
   "archiveDocs": [
     {
       "id": "rating_08.05.2026_S-26-42_Создание отдела дистанционных продаж.md",
@@ -13,7 +13,7 @@ window.archiveRepoData = {
       "ext": "md",
       "size": 7954,
       "mime": "application/octet-stream",
-      "savedAt": "2026-05-16T07:07:01.680Z",
+      "savedAt": "2026-05-16T07:07:54.059Z",
       "filePath": "./archive/weekly/rating_08.05.2026_S-26-42_Создание отдела дистанционных продаж.md"
     },
     {
