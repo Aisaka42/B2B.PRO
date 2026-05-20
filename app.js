@@ -18,6 +18,7 @@ const state = {
   githubRememberToken: true,
   githubPublishing: false,
   githubStatus: "",
+  pagesPendingNotice: null,
   snapshotRecords: [],
   snapshotLoading: true,
   snapshotMessages: {},
@@ -36,6 +37,7 @@ const ARCHIVE_ROLLBACK_KEY = "project-svetofor-archive-rollback-20260505";
 const SNAPSHOT_SEED_KEY = "project-svetofor-snapshots-seed-20260508-v1";
 const REPO_ARCHIVE_SYNC_KEY = "project-svetofor-repo-archive-sync-20260508-v1";
 const REPO_SYNC_SETTINGS_KEY = "project-svetofor-github-sync-20260512-v1";
+const PAGES_PENDING_NOTICE_KEY = "project-svetofor-pages-pending-20260516-v1";
 const REPO_CONFIG = {
   owner: "Aisaka42",
   repo: "B2B.PRO",
@@ -269,6 +271,47 @@ function clearGitHubSyncSettings() {
   localStorage.removeItem(REPO_SYNC_SETTINGS_KEY);
 }
 
+function loadPagesPendingNotice() {
+  try {
+    const raw = localStorage.getItem(PAGES_PENDING_NOTICE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object" || typeof parsed.at !== "string" || !parsed.at) {
+      localStorage.removeItem(PAGES_PENDING_NOTICE_KEY);
+      return null;
+    }
+    if ((Date.now() - new Date(parsed.at).getTime()) > 10 * 60 * 1000) {
+      localStorage.removeItem(PAGES_PENDING_NOTICE_KEY);
+      return null;
+    }
+    return {
+      label: typeof parsed.label === "string" && parsed.label.trim() ? parsed.label.trim() : "архив",
+      at: parsed.at
+    };
+  } catch {
+    localStorage.removeItem(PAGES_PENDING_NOTICE_KEY);
+    return null;
+  }
+}
+
+function hydratePagesPendingNotice() {
+  state.pagesPendingNotice = loadPagesPendingNotice();
+}
+
+function markPagesPropagationPending(label) {
+  state.pagesPendingNotice = {
+    label: label || "архив",
+    at: new Date().toISOString()
+  };
+  localStorage.setItem(PAGES_PENDING_NOTICE_KEY, JSON.stringify(state.pagesPendingNotice));
+}
+
+function pagesPropagationMessage() {
+  const notice = state.pagesPendingNotice;
+  if (!notice?.at) return "";
+  return `Последняя публикация (${notice.label}) уже записана в репозиторий в ${formatDate(notice.at)}. GitHub Pages и прямые ссылки могут обновиться с задержкой 1-3 минуты. Если список не изменился, нажмите «Пересинхронизировать архив».`;
+}
+
 async function refreshRemoteRepoArchiveData() {
   const url = `${repoRawBaseUrl()}${REPO_ARCHIVE_FILE}?ts=${Date.now()}`;
   const response = await fetch(url, { cache: "no-store" });
@@ -280,11 +323,37 @@ async function refreshRemoteRepoArchiveData() {
   return applyRepoArchiveData(parsed);
 }
 
+function resolveLiveArchiveFileUrl(filePath, cacheKey = "", fileName = "") {
+  const normalizedPath = String(filePath || "").replace(/^\.\//u, "");
+  const url = new URL("/archive/file", `${uploadApiBaseUrl()}/`);
+  url.searchParams.set("siteId", uploadSiteId());
+  url.searchParams.set("path", normalizedPath);
+  if (cacheKey) {
+    url.searchParams.set("_archive", String(cacheKey));
+  }
+  if (fileName) {
+    url.searchParams.set("name", fileName);
+  }
+  return url.toString();
+}
+
+async function refreshSharedArchiveData() {
+  if (uploadApiConfigured()) {
+    const result = await callUploadApi("/archive", { includePassword: false });
+    if (result?.archiveData) {
+      return applyRepoArchiveData(result.archiveData);
+    }
+    throw new Error("Сервис загрузки не вернул archiveData.");
+  }
+
+  return refreshRemoteRepoArchiveData();
+}
+
 async function syncArchiveFromUploadResult(result) {
   if (result?.archiveData) {
     applyRepoArchiveData(result.archiveData);
   } else {
-    await refreshRemoteRepoArchiveData();
+    await refreshSharedArchiveData();
   }
   await syncRepoArchiveSeed(true, true);
   state.archiveDocs = await archiveGetAll();
@@ -1582,8 +1651,11 @@ function parseRatingDocument(doc, rawText) {
   };
 }
 
-function resolveArchiveFileUrl(filePath, cacheKey = "") {
+function resolveArchiveFileUrl(filePath, cacheKey = "", fileName = "") {
   let url;
+  if (uploadApiConfigured() && String(filePath || "").startsWith("./")) {
+    return resolveLiveArchiveFileUrl(filePath, cacheKey, fileName);
+  }
   if (/^https?:\/\//iu.test(filePath)) {
     url = new URL(filePath);
   } else if (filePath.startsWith("./")) {
@@ -3098,7 +3170,7 @@ function archiveMarkup() {
     : `
       <article class="archiveEmpty">
         <strong>Архив пока пуст.</strong>
-        <span>Загрузите протоколы и rating. Если есть чек-листы, сайт тоже примет их и учтёт в расчётах. Файлы сохранятся локально в браузере этого ноутбука и будут доступны для скачивания позже.</span>
+        <span>${repoArchive.archiveDocs.length ? `В общем архиве уже есть ${repoArchive.archiveDocs.length} weekly-файлов, но локальный слой их сейчас не показал. Нажмите «Пересинхронизировать архив».` : "Загрузите протоколы и rating. Если есть чек-листы, сайт тоже примет их и учтёт в расчётах. Файлы сохранятся локально в браузере этого ноутбука и будут доступны для скачивания позже."}</span>
       </article>
     `;
 
@@ -3136,10 +3208,12 @@ function archiveMarkup() {
           <label class="validatorHint"><input type="checkbox" data-github-remember ${state.githubRememberToken ? "checked" : ""} ${state.githubPublishing ? "disabled" : ""} /> Запомнить пароль на этом устройстве</label>
           <button class="archiveButton accent" type="button" data-github-save ${state.githubPublishing ? "disabled" : ""}>Сохранить пароль</button>
           <button class="archiveButton ghost" type="button" data-github-test ${state.githubToken ? "" : "disabled"} ${state.githubPublishing ? "disabled" : ""}>Проверить подключение</button>
+          <button class="archiveButton ghost" type="button" data-archive-resync ${state.githubPublishing ? "disabled" : ""}>Пересинхронизировать архив</button>
           <button class="archiveButton ghost" type="button" data-github-clear ${state.githubToken ? "" : "disabled"} ${state.githubPublishing ? "disabled" : ""}>Очистить</button>
           <button class="archiveButton ghost" type="button" data-archive-export-repo ${state.githubPublishing ? "disabled" : ""}>Скачать ${REPO_ARCHIVE_FILE}</button>
         </div>
         ${state.githubStatus ? `<div class="archiveNotice">${escapeHtml(state.githubStatus)}</div>` : ""}
+        ${pagesPropagationMessage() ? `<div class="archiveNotice">${escapeHtml(pagesPropagationMessage())}</div>` : ""}
       </article>
 
       <section class="metricsGrid archiveMetrics">
@@ -3390,6 +3464,13 @@ function render() {
     });
   }
 
+  const archiveResyncButton = app.querySelector("[data-archive-resync]");
+  if (archiveResyncButton) {
+    archiveResyncButton.addEventListener("click", async () => {
+      await refreshArchiveState();
+    });
+  }
+
   const githubTokenInput = app.querySelector("[data-github-token]");
   if (githubTokenInput) {
     githubTokenInput.addEventListener("input", () => {
@@ -3539,11 +3620,12 @@ async function refreshArchiveState() {
   render();
   try {
     hydrateGitHubSyncSettings();
+    hydratePagesPendingNotice();
     const rollbackDone = await rollbackSeededArchiveDocs();
     try {
-      await refreshRemoteRepoArchiveData();
+      await refreshSharedArchiveData();
     } catch (error) {
-      state.githubStatus = `Работаю по встроенной копии архива: ${error.message}`;
+      state.githubStatus = `Живой архив сейчас не прочитался, использую встроенную копию: ${error.message}`;
     }
     await syncRepoArchiveSeed(true, true);
     state.archiveDocs = await archiveGetAll();
@@ -3562,6 +3644,7 @@ async function refreshArchiveState() {
 
 async function initializeArchiveLayer() {
   hydrateGitHubSyncSettings();
+  hydratePagesPendingNotice();
   state.archiveLoading = true;
   state.snapshotLoading = true;
   render();
@@ -3570,9 +3653,9 @@ async function initializeArchiveLayer() {
     const rollbackDone = await rollbackSeededArchiveDocs();
     await seedCharterSnapshots();
     try {
-      await refreshRemoteRepoArchiveData();
+      await refreshSharedArchiveData();
     } catch (error) {
-      state.githubStatus = `Общий архив из GitHub сейчас не прочитался, использую встроенную копию: ${error.message}`;
+      state.githubStatus = `Живой архив сейчас не прочитался, использую встроенную копию: ${error.message}`;
     }
     const repoSync = await syncRepoArchiveSeed(true, true);
     state.archiveDocs = await archiveGetAll();
@@ -3859,6 +3942,7 @@ async function saveSnapshotFromArchiveForm(form) {
       record.sourceText = "";
       sharedPublished = true;
       persistGitHubSyncSettings();
+      markPagesPropagationPending(`устав ${projectCode}`);
       state.githubStatus = `Устав ${file.name} отправлен в общий архив.`;
     } catch (error) {
       state.githubStatus = `Устав пока сохранён только локально: ${error.message}`;
@@ -4021,6 +4105,7 @@ async function saveArchiveFiles(files) {
     });
     await syncArchiveFromUploadResult(result);
     persistGitHubSyncSettings();
+    markPagesPropagationPending("weekly");
     state.archiveMessage = `Сохранено и опубликовано файлов: ${files.length}.${renamedCount ? ` Автопереименовано: ${renamedCount}.` : ""}${replacedCount ? ` Обновлено существующих weekly: ${replacedCount}.` : ""}${uploadedOnlyPastWeeks ? ` Файлы относятся к более ранней неделе (${uploadedWeeks.join(", ")}), поэтому верхняя сводка текущей недели не изменилась, а история и динамика пересчитаны.` : " Все вкладки сайта обновлены по общему архиву."}`;
     state.githubStatus = `Weekly опубликованы в общий архив ${repoLabel()}.`;
   } catch (error) {
@@ -4038,7 +4123,7 @@ async function downloadSnapshotDocument(id) {
 
   if (item.sourceFilePath) {
     const link = document.createElement("a");
-    link.href = resolveArchiveFileUrl(item.sourceFilePath, item.uploadedAt || item.id || Date.now());
+    link.href = resolveArchiveFileUrl(item.sourceFilePath, item.uploadedAt || item.id || Date.now(), item.sourceFileName || `${item.projectCode}_${item.snapshotMonth}.md`);
     link.download = item.sourceFileName || `${item.projectCode}_${item.snapshotMonth}.md`;
     document.body.append(link);
     link.click();
@@ -4070,7 +4155,7 @@ async function downloadArchiveDocument(id) {
   if (!item) return;
   if (item.filePath && !item.blob) {
     const link = document.createElement("a");
-    link.href = resolveArchiveFileUrl(item.filePath, item.savedAt || item.id || Date.now());
+    link.href = resolveArchiveFileUrl(item.filePath, item.savedAt || item.id || Date.now(), item.name);
     link.download = item.name;
     document.body.append(link);
     link.click();
