@@ -13,6 +13,7 @@ const state = {
   archiveDocs: [],
   archiveLoading: true,
   archiveMessage: "",
+  dashboardLoading: true,
   dashboardModel: dashboard,
   githubToken: "",
   githubRememberToken: true,
@@ -358,7 +359,10 @@ async function syncArchiveFromUploadResult(result) {
   await syncRepoArchiveSeed(true, true);
   state.archiveDocs = await archiveGetAll();
   state.snapshotRecords = await snapshotGetAll();
+  state.dashboardLoading = true;
+  render();
   await rebuildDashboardModel();
+  state.dashboardLoading = false;
 }
 
 async function uploadApiResponseError(response) {
@@ -3287,6 +3291,17 @@ function archiveMarkup() {
 }
 
 function overviewMarkup() {
+  if (state.dashboardLoading) {
+    return `
+      <section class="sectionStack">
+        <article class="snapshotEmpty subtle">
+          <strong>Подтягиваю live-архив…</strong>
+          <span>Сводка появится автоматически, как только сайт дочитает weekly и пересоберёт показатели.</span>
+        </article>
+      </section>
+    `;
+  }
+
   const model = currentDashboard();
   return `
     <section class="sectionStack">
@@ -3381,6 +3396,7 @@ function activeTabMarkup() {
 
 function render() {
   const model = currentDashboard();
+  const dashboardLoading = state.dashboardLoading;
   app.innerHTML = `
     <main class="appShell">
       <section class="hero">
@@ -3392,9 +3408,9 @@ function render() {
             план на следующую неделю, эскалации и качество weekly-отчёта без необходимости открывать каждый документ отдельно.
           </p>
           <div class="heroMeta">
-            <span class="metaBadge">Период weekly: <code>${escapeHtml(model.latestPeriod)}</code></span>
-            <span class="metaBadge">Обновлено: <code>${escapeHtml(formatDate(model.generatedAt))}</code></span>
-            <span class="metaBadge">Проектов: <code>${model.summary.projects}</code></span>
+            <span class="metaBadge">Период weekly: <code>${escapeHtml(dashboardLoading ? "Загружаю live-архив..." : model.latestPeriod)}</code></span>
+            <span class="metaBadge">Обновлено: <code>${escapeHtml(dashboardLoading ? "—" : formatDate(model.generatedAt))}</code></span>
+            <span class="metaBadge">Проектов: <code>${dashboardLoading ? "—" : model.summary.projects}</code></span>
           </div>
         </article>
 
@@ -3406,15 +3422,15 @@ function render() {
           <div class="trafficMini">
             <article class="trafficMiniCard">
               <div class="trafficMiniLabel">Зелёный</div>
-              <div class="trafficMiniValue" style="color:var(--green)">${model.summary.green}</div>
+              <div class="trafficMiniValue" style="color:var(--green)">${dashboardLoading ? "…" : model.summary.green}</div>
             </article>
             <article class="trafficMiniCard">
               <div class="trafficMiniLabel">Жёлтый</div>
-              <div class="trafficMiniValue" style="color:var(--yellow)">${model.summary.yellow}</div>
+              <div class="trafficMiniValue" style="color:var(--yellow)">${dashboardLoading ? "…" : model.summary.yellow}</div>
             </article>
             <article class="trafficMiniCard">
               <div class="trafficMiniLabel">Нет отчёта</div>
-              <div class="trafficMiniValue" style="color:var(--red)">${model.summary.missingReports}</div>
+              <div class="trafficMiniValue" style="color:var(--red)">${dashboardLoading ? "…" : model.summary.missingReports}</div>
             </article>
           </div>
         </aside>
@@ -3617,6 +3633,7 @@ async function refreshSnapshotState() {
 
 async function refreshArchiveState() {
   state.archiveLoading = true;
+  state.dashboardLoading = true;
   render();
   try {
     hydrateGitHubSyncSettings();
@@ -3630,7 +3647,10 @@ async function refreshArchiveState() {
     await syncRepoArchiveSeed(true, true);
     state.archiveDocs = await archiveGetAll();
     state.snapshotRecords = await snapshotGetAll();
+    state.archiveLoading = false;
+    render();
     await rebuildDashboardModel();
+    state.dashboardLoading = false;
     if (rollbackDone) {
       state.archiveMessage = "Автозагрузка из папок отменена. Импортированные документы убраны из локального архива.";
     }
@@ -3638,6 +3658,7 @@ async function refreshArchiveState() {
     state.archiveMessage = `Не удалось прочитать локальный архив: ${error.message}`;
   } finally {
     state.archiveLoading = false;
+    state.dashboardLoading = false;
     render();
   }
 }
@@ -3646,6 +3667,7 @@ async function initializeArchiveLayer() {
   hydrateGitHubSyncSettings();
   hydratePagesPendingNotice();
   state.archiveLoading = true;
+  state.dashboardLoading = true;
   state.snapshotLoading = true;
   render();
 
@@ -3660,7 +3682,11 @@ async function initializeArchiveLayer() {
     const repoSync = await syncRepoArchiveSeed(true, true);
     state.archiveDocs = await archiveGetAll();
     state.snapshotRecords = await snapshotGetAll();
+    state.archiveLoading = false;
+    state.snapshotLoading = false;
+    render();
     await rebuildDashboardModel();
+    state.dashboardLoading = false;
 
     if (rollbackDone) {
       state.archiveMessage = "Автозагрузка из папок отменена. Импортированные документы убраны из локального архива.";
@@ -3672,6 +3698,7 @@ async function initializeArchiveLayer() {
     state.snapshotMessages.__global = `Не удалось прочитать срезы раздела 6: ${error.message}`;
   } finally {
     state.archiveLoading = false;
+    state.dashboardLoading = false;
     state.snapshotLoading = false;
     render();
   }
@@ -4068,7 +4095,10 @@ async function saveArchiveFiles(files) {
   }
 
   state.archiveDocs = await archiveGetAll();
+  state.dashboardLoading = true;
+  render();
   await rebuildDashboardModel();
+  state.dashboardLoading = false;
   const latestWeekAfterSave = currentDashboard()?.summary?.newestReportDate || "";
   const uploadedWeeks = [...new Set(uploadedDocs.map((item) => item.periodDate).filter(Boolean))];
   const uploadedOnlyPastWeeks = uploadedWeeks.length
@@ -4177,7 +4207,10 @@ async function deleteArchiveDocument(id) {
   const item = state.archiveDocs.find((doc) => doc.id === id);
   await archiveDelete(id);
   state.archiveDocs = await archiveGetAll();
+  state.dashboardLoading = true;
+  render();
   await rebuildDashboardModel();
+  state.dashboardLoading = false;
   const token = activeGitHubToken();
 
   if (item && uploadApiConfigured() && token) {
