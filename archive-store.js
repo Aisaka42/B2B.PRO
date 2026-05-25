@@ -1,7 +1,35 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-05-22T11:34:57.607Z",
+  "version": "2026-05-25T03:31:02.646Z",
   "archiveDocs": [
+    {
+      "id": "project_protocol_22.05.2026_S-26-27_Новые Продукты B2B.md",
+      "name": "project_protocol_22.05.2026_S-26-27_Новые Продукты B2B.md",
+      "sourceName": "project_protocol_22.05.2026_S-26-27_Новые Продукты B2B.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-27",
+      "projectName": "Новые Продукты B2B",
+      "periodDate": "22.05.2026",
+      "ext": "md",
+      "size": 8502,
+      "mime": "application/octet-stream",
+      "savedAt": "2026-05-25T03:30:47.243Z",
+      "filePath": "./archive/weekly/project_protocol_22.05.2026_S-26-27_Новые Продукты B2B.md"
+    },
+    {
+      "id": "project_protocol_22.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "name": "project_protocol_22.05.2026_S-26-19_Новые доходы BIG_B2B.md",
+      "sourceName": "project_protocol  22.05.2026.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-19",
+      "projectName": "Новые доходы BIG_B2B",
+      "periodDate": "22.05.2026",
+      "ext": "md",
+      "size": 6274,
+      "mime": "application/octet-stream",
+      "savedAt": "2026-05-25T03:30:47.235Z",
+      "filePath": "./archive/weekly/project_protocol_22.05.2026_S-26-19_Новые доходы BIG_B2B.md"
+    },
     {
       "id": "rating_22.05.2026_S-26-27_Новые Продукты B2B.md",
       "name": "rating_22.05.2026_S-26-27_Новые Продукты B2B.md",
