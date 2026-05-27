@@ -1093,7 +1093,7 @@ function parseFileName(name) {
 
   const base = source.slice(0, -extMatch[0].length);
   const lowered = base.toLowerCase();
-  const typePrefix = ["project_protocol", "rating", "raiting", "checklist"].find((prefix) => lowered.startsWith(`${prefix}_`));
+  const typePrefix = ["project_protocol", "project", "rating", "raiting", "checklist"].find((prefix) => lowered.startsWith(`${prefix}_`));
   if (!typePrefix) return null;
 
   const rest = base.slice(typePrefix.length + 1);
@@ -1116,6 +1116,7 @@ function parseFileName(name) {
 function normalizeWeeklyFileType(value = "") {
   const normalized = String(value).trim().toLowerCase();
   if (normalized === "raiting") return "rating";
+  if (normalized === "project") return "project_protocol";
   if (normalized.includes("project_protocol") || normalized.includes("protocol")) return "project_protocol";
   if (normalized.includes("rating") || normalized.includes("raiting")) return "rating";
   if (normalized.includes("checklist")) return "checklist";
@@ -1155,7 +1156,7 @@ function lookupProjectNameByCode(projectCode = "") {
 
 function typeHintFromFileName(name = "") {
   const lowered = String(name).toLowerCase();
-  if (lowered.includes("project_protocol") || lowered.includes("project protocol") || lowered.includes("протокол")) {
+  if (lowered.startsWith("project_") || lowered.includes("project_protocol") || lowered.includes("project protocol") || lowered.includes("протокол")) {
     return "project_protocol";
   }
   if (lowered.includes("rating") || lowered.includes("raiting") || lowered.includes("рейтинг")) {
@@ -3130,7 +3131,7 @@ function methodologyMarkup() {
               Выбрать файлы
               <input id="validatorInput" type="file" multiple />
             </label>
-            <div class="validatorHint">Поддерживаемые маски: rating / project_protocol / checklist. Если имя неидеальное, сайт попробует привести его автоматически.</div>
+            <div class="validatorHint">Поддерживаемые маски: rating / project_protocol / project / checklist. Если имя неидеальное, сайт попробует привести его автоматически.</div>
           </div>
           <div class="validatorResult">${validatorRows}</div>
         </div>
