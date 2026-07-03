@@ -1,7 +1,21 @@
 window.archiveRepoData = {
   "site": "project-svetofor-plus",
-  "version": "2026-06-15T09:08:49.662Z",
+  "version": "2026-07-03T11:13:16.133Z",
   "archiveDocs": [
+    {
+      "id": "project_protocol_03.07.2026_S-26-27_Новые Продукты B2B.md",
+      "name": "project_protocol_03.07.2026_S-26-27_Новые Продукты B2B.md",
+      "sourceName": "project_protocol_03.07.2026_S-26-27_Новые Продукты B2B.md",
+      "type": "project_protocol",
+      "projectCode": "S-26-27",
+      "projectName": "Новые Продукты B2B",
+      "periodDate": "03.07.2026",
+      "ext": "md",
+      "size": 11326,
+      "mime": "text/markdown",
+      "savedAt": "2026-07-03T10:57:28.456Z",
+      "filePath": "./archive/weekly/project_protocol_03.07.2026_S-26-27_Новые Продукты B2B.md"
+    },
     {
       "id": "project_protocol_11.06.2026_S-26-27_Новые Продукты B2B.md",
       "name": "project_protocol_11.06.2026_S-26-27_Новые Продукты B2B.md",
